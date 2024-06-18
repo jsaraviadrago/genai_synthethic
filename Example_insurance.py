@@ -2,7 +2,6 @@ from scipy.stats import norm
 import numpy as np
 import csv
 
-
 filename = 'C:\\Users\\JuanCarlosSaraviaDra\\Downloads\\insurance_compare_train.csv' # make sure fields don't contain commas
 # source: https://www.kaggle.com/datasets/teertha/ushealthinsurancedataset
 
