@@ -15,7 +15,10 @@ df_insurance_compare_update_real = df_insurance_compare_update.loc[df_insurance_
 df_insurance_compare_update_real_train = df_insurance_compare_update_real.iloc[:669,] # Getting the first 668
 df_insurance_compare_update_real_test = df_insurance_compare_update_real.iloc[670:,] # Getting the last 668
 
-df_insurance_compare_update_real_train.to_csv("insurance_compare_train.csv", sep=',', encoding='utf-8')
-df_insurance_compare_update_real_test.to_csv("insurance_compare_test.csv", sep=',', encoding='utf-8')
+df_insurance_compare_update_real_train = df_insurance_compare_update_real_train.dropna(axis= 'columns')
+df_insurance_compare_update_real_train = df_insurance_compare_update_real_train.drop('Data', axis=1)
+
+df_insurance_compare_update_real_train.to_csv("insurance_compare_train.csv", sep=',', encoding='utf-8', index=False)
+#df_insurance_compare_update_real_test.to_csv("insurance_compare_test.csv", sep=',', encoding='utf-8')
 
 
