@@ -1,17 +1,30 @@
 from scipy.stats import norm
 import numpy as np
+import requests
 import csv
 
-filename = 'C:\\Users\\JuanCarlosSaraviaDra\\Downloads\\insurance_compare_train.csv' # make sure fields don't contain commas
-# source: https://www.kaggle.com/datasets/teertha/ushealthinsurancedataset
+raw_url = "https://raw.githubusercontent.com/jsaraviadrago/genai_synthethic/main/"
+insurance = 'insurance.csv'
 
+# URL to the raw CSV file on GitHub
+url = raw_url+insurance
 
-# Fields: age, sex, bmi, children, smoker, region, charges
+# Fetch the CSV content from the URL
+response = requests.get(url)
+response.raise_for_status()  # Check if the request was successful
 
-with open(filename, 'r') as csvfile:
-    reader = csv.reader(csvfile)
-    fields = next(reader) # Reads header row as a list
-    rows = list(reader)   # Reads all subsequent rows as a list of lists
+# Decode the content to get a string
+csv_content = response.content.decode('utf-8')
+
+# Use the csv module to read the CSV content
+reader = csv.reader(csv_content.splitlines())
+fields = next(reader)  # Reads header row as a list
+rows = list(reader)    # Reads all subsequent rows as a list of lists
+
+# Print fields and first few rows for verification
+print(fields)
+for row in rows[:5]:  # Print first 5 rows
+    print(row)
 
 #-- group by (sex, smoker, region)
 
