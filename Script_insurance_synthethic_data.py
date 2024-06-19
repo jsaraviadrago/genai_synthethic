@@ -2,7 +2,10 @@ import pandas as pd
 import numpy as np
 from scipy.stats import norm
 
-filename = 'C:\\Users\\JuanCarlosSaraviaDra\\Downloads\\insurance_compare_train.csv'
+url2 = "https://raw.githubusercontent.com/jsaraviadrago/genai_synthethic/main/"
+insurance_compare_train = 'insurance_compare_train.csv'
+
+filename = url2 + insurance_compare_train
 
 # Read the CSV file into a DataFrame
 df = pd.read_csv(filename)
