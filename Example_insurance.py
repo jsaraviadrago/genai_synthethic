@@ -44,7 +44,7 @@ for obs in rows:
 
 seed = 453
 np.random.seed(seed)
-OUT=open("insurance_synth.txt","w")
+OUT=open("insurance_synth_example.txt","w")
 for group in groupCount:
     nobs = groupCount[group]
     age = []
