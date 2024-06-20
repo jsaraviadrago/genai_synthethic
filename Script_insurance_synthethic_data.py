@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 from scipy.stats import norm
-import csv
+
 
 url2 = "https://raw.githubusercontent.com/jsaraviadrago/genai_synthethic/main/"
 insurance_compare_train = 'insurance_compare_train.csv'
