@@ -18,6 +18,8 @@ df_insurance_compare_update_real_test = df_insurance_compare_update_real.iloc[67
 df_insurance_compare_update_real_train = df_insurance_compare_update_real_train.dropna(axis= 'columns')
 df_insurance_compare_update_real_train = df_insurance_compare_update_real_train.drop('Data', axis=1)
 
+
+
 #df_insurance_compare_update_real_train.to_csv("insurance_compare_train.csv", sep=',', encoding='utf-8', index=False)
 #df_insurance_compare_update_real_test.to_csv("insurance_compare_test.csv", sep=',', encoding='utf-8')
 
