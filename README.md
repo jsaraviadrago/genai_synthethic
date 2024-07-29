@@ -12,6 +12,8 @@ The idea of this repo is to show you how to create synthethic data bsed on the e
 - The data is "insurance.csv" which you can find the details from it here[[2]](#2). Regardless of that, in the Notebook you can also find the urls from where I got the information so you can reproduce it. 
 - The script_holdout_insurance_df.py is just a script I created to seperate the real data in half and have a test and train. 
 
+The algorithm used hear is "copulas", you can find reference of it in the synthetic data book
+
 ### Reference
 
 <a id="1">[1]</a>
