@@ -26,10 +26,6 @@ if mode == 'Data':
     # Read the content of the file line by line
     table = response.text.splitlines()
 
-    #IN = open(url, "r")
-    #table = IN.readlines()
-    #IN.close()
-
     temp={}
     t = 0
     # t/t_unit is an integer every t_unit observations (node)
