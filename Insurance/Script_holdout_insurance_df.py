@@ -1,7 +1,7 @@
 import pandas as pd
 
 insurance_compare = 'insurance_compare.csv'
-url = "https://raw.githubusercontent.com/jsaraviadrago/genai_synthethic/main/"
+url = "https://raw.githubusercontent.com/jsaraviadrago/genai_synthethic/main/Insurance/"
 
 raw_insurance_compare_update = url + insurance_compare
 

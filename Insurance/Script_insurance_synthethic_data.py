@@ -3,7 +3,7 @@ import numpy as np
 from scipy.stats import norm
 
 
-url2 = "https://raw.githubusercontent.com/jsaraviadrago/genai_synthethic/main/"
+url2 = "https://raw.githubusercontent.com/jsaraviadrago/genai_synthethic/main/Insurance/"
 insurance_compare_train = 'insurance_compare_train.csv'
 
 filename = url2 + insurance_compare_train
