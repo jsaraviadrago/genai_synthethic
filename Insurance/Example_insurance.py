@@ -3,7 +3,7 @@ import numpy as np
 import requests
 import csv
 
-raw_url = "https://raw.githubusercontent.com/jsaraviadrago/genai_synthethic/main/"
+raw_url = "https://raw.githubusercontent.com/jsaraviadrago/genai_synthethic/main/Insurance/"
 insurance = 'insurance.csv'
 
 # URL to the raw CSV file on GitHub
