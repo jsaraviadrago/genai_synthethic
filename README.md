@@ -17,7 +17,7 @@ The idea of this repo is to show you how to create synthethic data bsed on the e
 
 The algorithm used hear is "copulas", you can find reference of it in the synthetic data book. 
 
-## Project 2: diabetes data
+## Project 2: Planets
 
 ### Reference
 
