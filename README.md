@@ -19,6 +19,8 @@ The algorithm used hear is "copulas", you can find reference of it in the synthe
 
 ## Project 2: Planets
 
+## Project 3: Synthethic data and cluster analysis
+
 ### Reference
 
 <a id="1">[1]</a>
