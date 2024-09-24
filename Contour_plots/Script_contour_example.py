@@ -29,5 +29,5 @@ ax.plot_surface(X, Y, Z, cmap="coolwarm", rstride=1, cstride=1, alpha=0.2)
 
 ax.contour(X, Y, Z, levels=60, linestyles="solid", alpha=0.9, antialiased=True)
 
-plt.savefig('contour3D.png', dpi=300)
+#plt.savefig('contour3D.png', dpi=300)
 plt.show()
